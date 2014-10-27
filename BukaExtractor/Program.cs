@@ -11,8 +11,6 @@ namespace BukaExtractor
     {
         static void Main(string[] args)
         {
-            bool noBukaFiles = false;
-
             if (args.Length == 0)
                 Extractor.setFilePath(Directory.GetCurrentDirectory());
             else
@@ -33,11 +31,10 @@ namespace BukaExtractor
             else
             {
                 et = null;
-                noBukaFiles = true;
                 Console.WriteLine("No Buka files is found");
             }
 
-            if (!noBukaFiles)
+            if (et != null)
                 et.extract();            
         }
     }
