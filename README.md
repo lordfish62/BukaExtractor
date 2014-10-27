@@ -1,3 +1,3 @@
 BukaExtractor
 =============
-BukaExtractor.exe <PATH>
+BukaExtractor.exe [PATH]
